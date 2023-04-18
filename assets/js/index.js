@@ -30,6 +30,7 @@ function getUserInfo(){
         },
     })
 }
+// console.log(window)
 // 渲染用户的头像
 function renderAvatar(user){
     // 设置用户的名称
