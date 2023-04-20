@@ -44,11 +44,12 @@ $('#file').on('change',function(e){
 //         height: 100
 //       })
 //       .toDataURL('image/png')       // 将 Canvas 画布上的内容，转化为 base64 格式的字符串
+//       console.log(dataURL)
 //       $.ajax({
 //         method:"POST",
 //         URL:'/my/update/avatar',
 //         data:{
-//             dataURL
+//             avatar:dataURL
 //         },
 //         success:function(res){
 //             console.log(res)
@@ -56,7 +57,7 @@ $('#file').on('change',function(e){
 //                 return layer.msg('更换头像失败')
 //             }
 //             layer.msg('更换头像成功！')
-//             window.parent.initUserInfo()
+//             window.parent.getUserInfo()
 //         }
 //       })
 // })
